@@ -35,6 +35,9 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+    - name: Publish image
+      run: docker push robertasvilk/docker-spring-api:latest
     
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag api-docker-image:$(date +%s)
