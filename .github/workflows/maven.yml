@@ -37,7 +37,7 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag docker-spring-api:$(date +%s)
+      run: docker build . --file Dockerfile --tag docker-spring-api:latest
       
     - name: Publish image
       run: docker push robertasvilk/docker-spring-api:latest
