@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: docker-spring-api
+spec:
+  replicas: 3
+  template:
+    spec:
+      containers:
+        - name: spring-api
+          image: robertasvilk/docker-spring-api:latest
+          ports:
+            - containerPort: 9080
