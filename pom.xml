@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.docker-tutorial</groupId>
 	<artifactId>api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>api</name>
 	<description>Docker, AOP and MongoDB demo project for Spring Boot</description>
 	<properties>

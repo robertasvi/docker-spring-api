@@ -1,5 +1,5 @@
 FROM openjdk:11
-ADD target/api-0.0.1-SNAPSHOT.jar docker-spring-api.jar
+ADD target/api-0.0.2.jar docker-spring-api.jar
 RUN ls -la
 ENV JAVA_OPTS=""
 EXPOSE 9080
